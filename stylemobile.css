@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  display: none;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+#hamburger {
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#hamburger:hover {
+  transform: scale(1.3);
+  color: rgb(241, 14, 207);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.katt1img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.katt1img:hover {
+  transform: scale(1.1);
+}
+
+.katt2img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.katt2img:hover {
+  transform: translateX(50px);
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.catGrid img:hover {
+  transform: scale(0.9);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    color: green;
+    transform: scale(1.1);
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .container {
+    width: 900px;
+  }
+
+  .section1 {
+    flex-direction: row;
+  }
+
+  .katt1img {
+    width: 50%;
+  }
+
+  .catGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .catGrid img:hover {
+    transform: scale(1.1);
+  }
+}
